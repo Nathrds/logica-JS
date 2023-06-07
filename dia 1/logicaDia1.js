@@ -22,6 +22,7 @@ if (numero30 === string30) {
     console.log('As variáveis ' + numero30 + ' e ' + string30 + ' não tem o mesmo tipo');
 }
 
+// na solução da professora, estava com o símbolo [==] nessa parte, mas outras pessoas também chegaram nessa conclusão que deu certo
 if (numero10 !== string10) {
     console.log('As variáveis ' + numero10 + ' e ' + string10 + ' tem o mesmo valor, mas tipos diferentes');
 } else {
