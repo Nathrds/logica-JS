@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica JS - Dia 4</title>
+</head>
+<body>
+    <script>
+        let numeroAdivinha = Math.floor(Math.random() * (10 - 0 + 1) + 0);
+        let chute = "";
+        let acertou = false;
+
+        for (let i = 0; i < 3; i++) {
+            chute = prompt('Tente adivinhar o número de 0 a 10!  >>ATENÇÃO, você só tem 3 tentativas...');
+            if (chute == numeroAdivinha) {
+                alert("Parabéns! Você acertou o número.");
+                acertou = true;
+                break;
+            }
+            alert("Errado!");
+        }
+
+        if (!acertou) {
+            alert('Infelizmente você errou! O número era ' + numeroAdivinha);
+        }
+    </script>
+</body>
+</html>
