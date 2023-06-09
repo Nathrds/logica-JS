@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica JS - dia 3</title>
+</head>
+<body>1
+    <script>
+        const perguntaArea = prompt('Você deseja seguir para qual área: Front-End [digite 1] ou Back-End [digite 2]?');
+        let linguagem = '';
+        switch (perguntaArea) {
+        case '1':
+            linguagem = prompt('Você quer aprender React ou Vaue?');
+            break;
+        case '2':
+            linguagem = prompt('Você quer aprender C# ou Java?');
+            break;
+        default:
+            alert('Você inseriu algo inválido!')
+        }
+
+        const especializacao_ou_fukkstack = prompt('Para seguir se especializando [Digite 1] ou Para seguir se desenvolvendo para ser Fullstack [Digite 2]');
+        if (especializacao_ou_fukkstack == 1) {
+            alert('Continue se especializando em ' + linguagem + ' para dominar essa área !');
+        } else if (especializacao_ou_fukkstack == 2) {
+            alert('Chegou a hora de começar a aprender outras linguagens além de ' + linguagem + ' se quiser se tornar Fullstack!');
+        } else {
+            alert('Você inseriu algo inválido!');
+        }
+
+        let msg = prompt('Tem mais alguma tecnologia que você gostaria de apender? Digite "ok" se sim.');
+        while (msg === 'ok') {
+            let novaTecnologia = prompt('Qual?');
+            alert(novaTecnologia + ' é realmente uma tecnologia muito legal!');
+            msg = prompt('Tem mais alguma tecnologia que você gostaria de aprender? Digite "ok" se sim.');
+        }
+    </script>
+</body>
+</html>
