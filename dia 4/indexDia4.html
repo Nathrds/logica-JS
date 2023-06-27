@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica JS - Dia 4</title>
+    <link rel="stylesheet" href="styleDia4.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo da Adivinhação</h1>
+        <h2>Tente adivinhar o número entre 0 e 10:</h2>
+        <p>Você tem 3 tentativas...</p>
+        <div class="container-2">
+            <input class="numero" type="number" name="chute" id="idChute" min="0" max="10"><br>
+            <button class="botao" onclick="verificarChute()">Chutar</button>
+        </div>
+        <span id="resultado"></span>
+    </div>
+
+    <script src="logicaDia4.js"></script>
+</body>
+</html>
