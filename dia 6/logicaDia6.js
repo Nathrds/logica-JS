@@ -5,7 +5,8 @@ var lista = {
     doces: []
   };
   
-  function adicionarComida() {
+// função para adicionar comida na lista e remover
+function adicionarComida() {
     var adicionar = prompt("Deseja adicionar uma comida na lista de compras? (sim /não / remover)");
   
     if (adicionar.toLowerCase() === "sim") {
@@ -42,7 +43,7 @@ var lista = {
       alert("Opção inválida!");
       adicionarComida();
     }
-  }
+}
   
   function verificarListaVazia() {
     for (var categoria in lista) {
@@ -63,8 +64,9 @@ var lista = {
     }
     return false;
   }
-  
-  function exibirLista() {
+
+// função para mostrar a lista
+function exibirLista() {
     var listaCompras = document.getElementById("listaCompras");
     listaCompras.innerHTML = "";
   
@@ -86,6 +88,6 @@ var lista = {
     }
   
     return listaCompras.innerHTML;
-  }
+}
   
   adicionarComida();
